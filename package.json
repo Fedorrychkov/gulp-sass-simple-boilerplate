@@ -1,0 +1,27 @@
+{
+  "name": "gulp-sass-simple-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp prod"
+  },
+  "keywords": [
+    "gulp",
+    "boilerplate",
+    "workflow",
+    "templates"
+  ],
+  "author": "Fyodor Rychkov",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "browser-sync": "^2.26.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-image": "^4.3.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

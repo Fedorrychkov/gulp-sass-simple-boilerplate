@@ -1,0 +1,7 @@
+.hello {
+    &__world {
+        font-size: 40px;
+        color: $dark-color;
+        padding: 32px 0;
+    }
+}
