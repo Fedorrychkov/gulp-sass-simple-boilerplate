@@ -7,5 +7,8 @@ Boilerplate for simple work
 * sass error logging
 * autoprefixer, last 3 browser version
 
+## Usage
+Run `git clone https://github.com/Fedorrychkov/gulp-sass-simple-boilerplate`, open folder `cd gulp-sass-simple-boilerplate` and run `npm i`.<br>
+Run `npm start` for start development.
 
 Node Version 10.10.0
