@@ -18,7 +18,13 @@
     "gulp",
     "boilerplate",
     "workflow",
-    "templates"
+    "templates",
+    "bootstrap-grid",
+    "image",
+    "del",
+    "autoprefixer",
+    "sass",
+    "scss"
   ],
   "author": "Fyodor Rychkov",
   "license": "MIT",
