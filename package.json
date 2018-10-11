@@ -1,11 +1,18 @@
 {
   "name": "gulp-sass-simple-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple gulp workflow for easy work",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedorrychkov/gulp-sass-simple-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fedorrychkov/gulp-sass-simple-boilerplate/issues"
   },
   "keywords": [
     "gulp",
