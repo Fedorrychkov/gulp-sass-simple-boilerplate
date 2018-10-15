@@ -6,6 +6,10 @@ Boilerplate for simple work
 * img minify
 * sass error logging
 * autoprefixer, last 3 browser version
+* nunjucks
+
+## Development
+all works in src folder
 
 ## Usage
 Run `git clone https://github.com/Fedorrychkov/gulp-sass-simple-boilerplate`, open folder `cd gulp-sass-simple-boilerplate` and run `npm i`.<br>

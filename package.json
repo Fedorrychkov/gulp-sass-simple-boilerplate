@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-simple-boilerplate",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simple gulp workflow for easy work",
   "main": "gulpfile.js",
   "scripts": {
