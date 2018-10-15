@@ -5,6 +5,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 const image = require('gulp-image');
 const del = require('del');
+const nunjucks = require('gulp-nunjucks');
+const njkRender = require('gulp-nunjucks-render');
+const prettify = require('gulp-html-prettify');
 
 var input = './src/assets/scss/*.scss';
 var output = './public/assets/css';
@@ -18,7 +21,7 @@ var autoprefixerOptions = {
   browsers: ['last 3 versions', 'IE 9', 'IE 10', 'IE 11']
 };
 
-gulp.task('serve', ['sass', 'image'], function() {
+gulp.task('serve', ['sass', 'image', 'nunjucks'], function() {
     browserSync.init({
         server: {
             baseDir: "./public"
@@ -30,7 +33,7 @@ gulp.task('serve', ['sass', 'image'], function() {
         gulp.run('image');
         browserSync.realod;
     })
-    gulp.watch("./public/*.html").on('change', browserSync.reload);
+	gulp.watch('./src/app/**/*.html', ['nunjucks']).on('change', browserSync.reload);
 });
 
 gulp.task('image', ['clean:image'], function () {
@@ -54,6 +57,16 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('nunjucks', () => {
+    return gulp.src('./src/app/**/*.html')
+        .pipe(prettify({
+            indent_size : 4
+        }))
+        .pipe(njkRender({
+            path: ['./src/app/']
+        }))
+        .pipe(gulp.dest('./public'));
+});
 
 gulp.task('watch', function() {
   return gulp
